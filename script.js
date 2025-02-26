@@ -38,3 +38,15 @@ function displayBooks() {
     bookList.appendChild(bookDiv)
   })
 }
+
+document.getElementById("book-form").addEventListener("submit", function(event) {
+  event.preventDefault(); 
+
+  const title = document.getElementById("title").value;
+  const author = document.getElementById("author").value;
+  const pages = document.getElementById("pages").value;
+
+  addBookToLibrary(title, author, pages, false);
+
+  document.getElementById("book-form").reset();
+});
