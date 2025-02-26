@@ -31,7 +31,7 @@ function displayBooks() {
       <p id="book-author">by ${book.author}</p>
       <p id="book-pages">${book.pages}</p>
       <p id="book-read">Status: ${book.read ? "Read" : "Not Read"}</p>
-      <button onclick="toggleRead(${index})" id="book-read">Toggle Read</button>
+      <button onclick="toggleRead(${index})" id="book-read">Change Status</button>
       <button onclick="removeBook(${index})" id="book-remove">Remove</button>
     `;
 
