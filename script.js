@@ -18,3 +18,23 @@ newBookBtn.addEventListener("click", function() {
     let newBookForm = document.getElementById("book-form");
     newBookForm.style.display = "block";
 })
+
+function displayBooks() {
+  const bookList = document.getElementById("book-list")
+  bookList.innerHTML = "";
+
+  myLibrary.forEach((book, index) => {
+    const bookDiv = document.createElement("div");
+    bookDiv.classList.add("book");
+    bookDiv.innerHTML = `
+      <p id="book-title">${book.title}</p>
+      <p id="book-author">by ${book.author}</p>
+      <p id="book-pages">${book.pages}</p>
+      <p id="book-read">${book.read}</p>
+      <button onclick="toggleRead(${index})" id="book-read">Toggle Read</button>
+      <button onclick="removeBook(${index})" id="book-remove">Remove</button>
+    `;
+
+    bookList.appendChild(bookDiv)
+  })
+}
