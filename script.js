@@ -30,7 +30,7 @@ function displayBooks() {
       <p id="book-title">${book.title}</p>
       <p id="book-author">by ${book.author}</p>
       <p id="book-pages">${book.pages}</p>
-      <p id="book-read">${book.read}</p>
+      <p id="book-read">Status: ${book.read ? "Read" : "Not Read"}</p>
       <button onclick="toggleRead(${index})" id="book-read">Toggle Read</button>
       <button onclick="removeBook(${index})" id="book-remove">Remove</button>
     `;
@@ -45,8 +45,14 @@ document.getElementById("book-form").addEventListener("submit", function(event) 
   const title = document.getElementById("title").value;
   const author = document.getElementById("author").value;
   const pages = document.getElementById("pages").value;
+  const read = document.getElementById('read').checked;
 
-  addBookToLibrary(title, author, pages, false);
+  addBookToLibrary(title, author, pages, read);
 
   document.getElementById("book-form").reset();
 });
+
+function toggleRead(index) {
+  myLibrary[index].read = !myLibrary[index].read;
+  displayBooks();
+}
