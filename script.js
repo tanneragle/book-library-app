@@ -56,3 +56,8 @@ function toggleRead(index) {
   myLibrary[index].read = !myLibrary[index].read;
   displayBooks();
 }
+
+function removeBook(index) {
+  myLibrary.splice(index, 1);
+  displayBooks()
+}
