@@ -7,6 +7,12 @@ function Book(title, author, pages, read) {
   this.read = read;
 }
 
-function addBookToLibrary() {
-  // take params, create a book then store it in the array
+function addBookToLibrary(title, author, pages, read) {
+  const newBook = new Book(title, author, pages, read);
+  myLibrary.push(newBook);
+  displayBooks();
 }
+
+let newBookBtn = document.getElementById("new-book-btn");
+newBookBtn.addEventListener("click", function() {
+})
