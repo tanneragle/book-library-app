@@ -16,7 +16,7 @@ function addBookToLibrary(title, author, pages, read) {
 let newBookBtn = document.getElementById("new-book-btn");
 newBookBtn.addEventListener("click", function() {
     let newBookForm = document.getElementById("book-form");
-    newBookForm.style.display = "block";
+    newBookForm.style.display = "flex";
 })
 
 function displayBooks() {
