@@ -18,6 +18,19 @@ body {
     align-items: center;
 }
 
+#top-section {
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bottom-section {
+    height: 75vh;
+    width: 100vh;
+}
+
 #title-container {
     display: flex;
     flex-direction: column;
@@ -47,8 +60,14 @@ p.description {
 #book-form {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
     margin: 2rem;
+}
+
+#book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 #read-container {
@@ -57,9 +76,14 @@ p.description {
     justify-content: center;
 }
 
+#read-label {
+    font-size: 1rem;
+}
+
 #form-bottom-buttons {
     display: flex;
     justify-content: center;
+    gap: 1rem;
 }
 
 #book-remove {
@@ -151,10 +175,11 @@ p.description {
 }
 
 .modal-content {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid white;
     width: 300px;
     text-align: center;
     position: relative;
