@@ -61,3 +61,31 @@ p.description {
     display: flex;
     justify-content: center;
 }
+
+#book-remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#book-remove svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+.book {
+    width: 30vh;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#book-bottom-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
