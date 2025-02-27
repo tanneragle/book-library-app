@@ -57,6 +57,10 @@ p.description {
     box-shadow: -4px 4px 0 0 rgba(255, 255, 255, 0.6);
 }
 
+#new-book-btn:hover, #change-status-button:hover {
+    background-color: rgba(255, 255, 255, 0.86)
+}
+
 #book-form {
     display: flex;
     flex-direction: column;
@@ -98,6 +102,11 @@ p.description {
     fill: white;
     width: 24px;
     height: 24px;
+}
+
+#book-remove:hover svg {
+    fill: red;
+    transform: rotate(-0.05turn);
 }
 
 .book {
