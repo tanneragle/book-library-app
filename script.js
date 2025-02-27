@@ -29,7 +29,7 @@ function displayBooks() {
     bookDiv.innerHTML = `
       <p id="book-title">${book.title}</p>
       <p id="book-author">by ${book.author}</p>
-      <p id="book-pages">${book.pages}</p>
+      <p id="book-pages">Pages: ${book.pages}</p>
       <p id="book-read">Status: ${book.read ? "Read" : "Not Read"}</p>
       <div id="book-bottom-buttons">
         <button onclick="toggleRead(${index})" id="book-read">Change Status</button>
