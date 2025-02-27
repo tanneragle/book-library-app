@@ -53,6 +53,7 @@ document.getElementById("book-form").addEventListener("submit", function(event) 
   addBookToLibrary(title, author, pages, read);
 
   document.getElementById("book-form").reset();
+  modal.style.display = "none";
 });
 
 function toggleRead(index) {
