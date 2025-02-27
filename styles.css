@@ -112,7 +112,7 @@ p.description {
 }
 
 .book {
-    width: 25vw;
+    width: 15vw;
     height: 25vh;
     display: flex;
     flex-direction: column;
