@@ -14,20 +14,24 @@
             <p class="description">This project was built as part of Odin Project.</p>
         </div>
         <button id="new-book-btn">New Book</button>
-        <div id="form-container">
-            <form action="" id="book-form" style="display: none;">
-                <input type="text" id="title" placeholder="Title" required>
-                <input type="text" id="author" placeholder="Author" required>
-                <input type="number" id="pages" placeholder="Pages" required>
-                <div id="read-container">
-                    <label for="read" id="read-label">Read:</label>
-                    <input type="checkbox" id="read">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div id="form-container">
+                    <form action="" id="book-form" style="display: none;">
+                        <input type="text" id="title" placeholder="Title" required>
+                        <input type="text" id="author" placeholder="Author" required>
+                        <input type="number" id="pages" placeholder="Pages" required>
+                        <div id="read-container">
+                            <label for="read" id="read-label">Read:</label>
+                            <input type="checkbox" id="read">
+                        </div>
+                        <div id="form-bottom-buttons">
+                            <button type="submit" id="submit">Add Book</button>
+                            <button type="cancel" id="cancel">Cancel</button>
+                        </div>
+                    </form>
                 </div>
-                <div id="form-bottom-buttons">
-                    <button type="submit" id="submit">Add Book</button>
-                    <button type="cancel" id="cancel">Cancel</button>
-                </div>
-            </form>
+            </div>
         </div>
         <div id="book-list"> </div>
     </div>
